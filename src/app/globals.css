@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cmu-red: #C41230;
+  --color-cmu-dark: #1a1a1a;
+  --color-cmu-gray: #333333;
+  --color-modelverse-bg: #ffffff;
+  --color-modelverse-card: #f8f9fa;
+  --color-modelverse-accent: #6d28d9;
+  --color-modelverse-glow: #8b5cf6;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-white text-zinc-900 antialiased;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-zinc-200 rounded-2xl shadow-sm;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-500;
+}
+
+.accent-gradient {
+  @apply bg-gradient-to-r from-[#6d28d9] to-[#C41230];
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-zinc-200 rounded-full hover:bg-[#C41230]/50 transition-colors;
+}
