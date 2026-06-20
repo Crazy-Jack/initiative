@@ -31,7 +31,7 @@ const Hero = () => {
               Initiative
             </h1>
             <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-8">
-              A collaborative research ecosystem pioneering intelligence and cost-effective AGI development.
+              A collaborative research ecosystem pioneering cost-effective AGI development.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
