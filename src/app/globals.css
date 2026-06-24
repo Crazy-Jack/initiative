@@ -44,3 +44,29 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   @apply bg-zinc-200 rounded-full hover:bg-[#C41230]/50 transition-colors;
 }
+
+@keyframes hero-gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-title-gradient {
+  background: linear-gradient(
+    120deg,
+    #71717a 0%,
+    #a1a1aa 20%,
+    #f4f4f5 42%,
+    #e4e4e7 55%,
+    #a1a1aa 75%,
+    #71717a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hero-gradient-shift 6s ease-in-out infinite;
+}

@@ -22,92 +22,130 @@ const Navbar = () => {
     { name: 'Team', href: '#team' },
     { name: 'Research', href: '#research' },
     { name: 'Partners', href: '#partners' },
-    { name: 'Join Initiative', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdH09t6URK6V6NNzBqQQqhdM0i5MWB22J63IbpcE9pWQy-19Q/viewform' },
   ];
 
-  return (
-    <nav className="fixed top-0 left-0 right-0 w-full z-50 flex flex-col">
-      {/* Top Bar: Logos */}
-      <div className="bg-[#bb0000] py-3 px-6">
-        <div className="container mx-auto flex items-center justify-between">
-           <div className="flex items-center gap-4 px-4 py-2">
-             {/* CMU SCS Logo */}
-             <a href="https://www.scs.cmu.edu/" target="_blank" rel="noreferrer" className="relative h-10 w-auto flex items-center">
-               <img 
-                 src={`${BASE_PATH}/media/cmu_scs_logo.png`} 
-                 alt="Carnegie Mellon University School of Computer Science" 
-                 className="h-full w-auto object-contain"
-               />
-             </a>
-   
-             {/* Divider */}
-             <div className="h-8 w-[1px] bg-white/30 mx-1"></div>
-   
-             {/* Intelligence Cube Logo */}
-             <a href="https://intelligencecubed.io/" target="_blank" rel="noreferrer" className="relative h-12 w-auto flex items-center">
-               <img 
-                 src={`${BASE_PATH}/media/nav-logo-new.png`} 
-                 alt="Intelligence Cubed" 
-                 className="h-full w-auto object-contain brightness-0 invert"
-               />
-             </a>
-           </div>
-           
-           {/* Mobile Toggle */}
-           <button 
-             className="md:hidden text-white"
-             onClick={() => setIsOpen(!isOpen)}
-           >
-             {isOpen ? <X size={24} /> : <Menu size={24} />}
-           </button>
-        </div>
-      </div>
+  const joinLink = {
+    name: 'Join Initiative',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSdH09t6URK6V6NNzBqQQqhdM0i5MWB22J63IbpcE9pWQy-19Q/viewform',
+  };
 
-      {/* Bottom Bar: Navigation */}
-      <div className={`transition-all duration-300 border-b border-zinc-800 ${scrolled ? 'bg-[#333333]/95 backdrop-blur-md shadow-sm' : 'bg-[#333333]'}`}>
-        <div className="container mx-auto px-6">
-          <div className="hidden md:flex items-center gap-8 py-4">
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 w-full border-b-[6px] border-[#333333] transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#bb0000]/95 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.35)] backdrop-blur-md'
+          : 'bg-[#bb0000] shadow-[0_1px_0_0_rgba(255,255,255,0.08)_inset]'
+      }`}
+    >
+      <div className="mx-auto flex items-center px-6 py-2.5 lg:px-10 lg:py-3">
+        {/* Logos */}
+        <div className="flex shrink-0 items-center gap-2.5 lg:gap-3.5">
+          <a
+            href="https://www.scs.cmu.edu/"
+            target="_blank"
+            rel="noreferrer"
+            className="relative flex h-7 w-auto items-center lg:h-8"
+          >
+            <img
+              src={`${BASE_PATH}/media/cmu_scs_logo.png`}
+              alt="Carnegie Mellon University School of Computer Science"
+              className="h-full w-auto object-contain"
+            />
+          </a>
+
+          <div className="h-6 w-px bg-white/25 lg:h-7" />
+
+          <a
+            href="https://intelligencecubed.io/"
+            target="_blank"
+            rel="noreferrer"
+            className="relative flex h-8 w-auto items-center lg:h-9"
+          >
+            <img
+              src={`${BASE_PATH}/media/nav-logo-new.png`}
+              alt="Intelligence Cubed"
+              className="h-full w-auto object-contain brightness-0 invert"
+            />
+          </a>
+
+          <div className="h-6 w-px bg-white/25 lg:h-7" />
+
+          <a
+            href="https://modelos.technology/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex shrink-0 items-center"
+          >
+            <img
+              src={`${BASE_PATH}/media/model-os-logo.png`}
+              alt="Model OS"
+              className="h-5 w-auto object-contain lg:h-[22px]"
+            />
+          </a>
+        </div>
+
+        {/* Nav links + CTA — grouped on the right */}
+        <div className="ml-auto flex shrink-0 items-center gap-6 lg:gap-8">
+          <div className="hidden items-center gap-8 lg:flex">
             {navLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  link.name === 'Join Initiative' 
-                    ? 'ml-auto px-5 py-2 bg-white text-[#333333] rounded-full hover:bg-zinc-200' 
-                    : 'text-white/90 hover:text-white'
-                }`}
+                className="text-sm font-medium text-white/90 transition-colors hover:text-white"
               >
                 {link.name}
               </a>
             ))}
           </div>
+
+          <a
+            href={joinLink.href}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#333333] shadow-sm transition-all hover:bg-zinc-100 md:inline-flex"
+          >
+            {joinLink.name}
+          </a>
+
+          <button
+            className="text-white/90 hover:text-white lg:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-zinc-100 shadow-lg"
+            className="border-t-[6px] border-[#333333] bg-[#a30000] lg:hidden"
           >
-            <div className="flex flex-col p-6 gap-4">
+            <div className="flex flex-col gap-4 px-6 py-6">
               {navLinks.map((link) => (
-                <a 
+                <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`font-medium ${
-                    link.name === 'Join Initiative' 
-                      ? 'text-[#C41230] font-bold' 
-                      : 'text-zinc-600'
-                  }`}
+                  className="text-sm font-medium text-white/90 transition-colors hover:text-white"
                 >
                   {link.name}
                 </a>
               ))}
+              <a
+                href={joinLink.href}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="mt-2 inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#333333] shadow-sm transition-all hover:bg-zinc-100"
+              >
+                {joinLink.name}
+              </a>
             </div>
           </motion.div>
         )}

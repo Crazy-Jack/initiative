@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import HeroVisionBridge from '../components/HeroVisionBridge';
 import Vision from '../components/Vision';
 import Team from '../components/Team';
 import Research from '../components/Research';
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <HeroVisionBridge />
         <Vision />
         <Team />
         <Research />
@@ -22,6 +24,7 @@ export default function Home() {
           <p>© {new Date().getFullYear()} i³ × CMU Modelverse Dev Initiative. All rights reserved.</p>
           <div className="mt-4 flex justify-center gap-6">
             <a href="https://intelligencecubed.io/" className="hover:text-zinc-900 transition-colors">Intelligence Cubed</a>
+            <a href="https://modelos.technology/" className="hover:text-zinc-900 transition-colors">Model OS</a>
             <a href="https://www.cs.cmu.edu/research/" className="hover:text-zinc-900 transition-colors">CMU Research</a>
           </div>
         </div>

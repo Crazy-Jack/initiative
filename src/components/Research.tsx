@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 const Research = () => {
   const publications = [
@@ -995,12 +996,13 @@ const Research = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#C41230]/5 blur-[120px] rounded-full"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="mb-16">
+        <ScrollReveal className="mb-16">
           <h2 className="text-4xl font-bold mb-4 text-zinc-900">Selected Publications from Research Fellows</h2>
           <div className="h-1 w-20 bg-[#C41230]"></div>
-        </div>
+        </ScrollReveal>
 
-        <div className="space-y-6 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar overflow-x-hidden">
+        <ScrollReveal delay={0.1}>
+          <div className="space-y-6 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar overflow-x-hidden">
           {publications.map((pub, i) => (
             <div key={i} className="group border-b border-zinc-100 pb-6 hover:bg-zinc-50 p-4 -mx-4 rounded-lg transition-colors">
               <p className="text-zinc-800 text-lg font-medium mb-1 group-hover:text-[#C41230] transition-colors leading-relaxed">
@@ -1015,7 +1017,8 @@ const Research = () => {
               </div>
             </div>
           ))}
-        </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

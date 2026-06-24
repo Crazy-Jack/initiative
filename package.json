@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:download": "NEXT_PUBLIC_BASE_PATH= next build && node scripts/package-download.mjs",
+    "export:mhtml": "NEXT_PUBLIC_BASE_PATH= next build && node scripts/export-mhtml.mjs",
     "start": "next start",
     "lint": "eslint"
   },
@@ -24,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "puppeteer-core": "^25.1.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
