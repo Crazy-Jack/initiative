@@ -167,7 +167,7 @@ const Team = () => {
     {
       name: 'Prof. Tai-Sing Lee',
       role: 'Director, Lee Lab for Biological & Machine Intelligence, CMU',
-      bio: 'Full Professor of Computer Science and Neuroscience at CMU. Dual PhDs from Harvard and MIT. Trained leaders at DeepMind, OpenAI, Google, and Berkeley, Yale etc. Recipient of McDonnell-Pew Young Investigator Award, NSF CAREER Award, and ICCV Helmholtz Prize.',
+      bio: 'Full Professor of Computer Science and Neuroscience at CMU. Dual PhDs from Harvard and MIT. One of only handful of people in the world who has profound background in neuro-surgery / neuroscience and artificial intelligence. His quest to human-level intelligence and Neuro-AGI dates back to early 90s and has been training leaders who play key leadership positions at DeepMind, OpenAI, Meta, and various acquired start-ups. Also his lab has been incubating many famous professors at top university like UC Berkeley and Yale etc. Recipient of McDonnell-Pew Young Investigator Award, NSF CAREER Award, and ICCV Helmholtz Prize.',
       links: { website: 'https://csd.cmu.edu/people/faculty/taising-lee' },
     },
     {
