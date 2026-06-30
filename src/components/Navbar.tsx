@@ -37,25 +37,25 @@ const Navbar = () => {
           : 'bg-[#bb0000] shadow-[0_1px_0_0_rgba(255,255,255,0.08)_inset]'
       }`}
     >
-      <div className="mx-auto flex items-center px-6 py-2.5 lg:px-10 lg:py-3">
+      <div className="mx-auto flex items-center px-4 py-2.5 lg:px-10 lg:py-3">
         {/* Logos */}
-        <div className="flex shrink-0 items-center gap-2.5 lg:gap-3.5">
+        <div className="flex min-w-0 items-center gap-1.5 lg:gap-3.5">
           <a
             href="https://www.scs.cmu.edu/"
             target="_blank"
             rel="noreferrer"
-            className="relative flex h-7 w-auto items-center lg:h-8"
+            className="relative flex h-5 w-auto items-center lg:h-8"
           >
             <img
               src={`${BASE_PATH}/media/cmu_scs_logo.png`}
               alt="Carnegie Mellon University School of Computer Science"
-              className="h-full w-auto object-contain"
+              className="h-full max-w-[110px] w-auto object-contain lg:max-w-none"
             />
           </a>
 
-          <div className="h-6 w-px bg-white/25 lg:h-7" />
+          <div className="h-5 w-px bg-white/25 lg:h-7" />
 
-          <div className="relative flex h-5 w-auto items-center lg:h-6">
+          <div className="relative flex h-4 w-auto items-center lg:h-6">
             <img
               src={`${BASE_PATH}/media/i3_transparent.png`}
               alt="Intelligence Cubed"
@@ -63,24 +63,24 @@ const Navbar = () => {
             />
           </div>
 
-          <div className="h-6 w-px bg-white/25 lg:h-7" />
+          <div className="h-5 w-px bg-white/25 lg:h-7" />
 
           <a
             href="https://modelos.technology/"
             target="_blank"
             rel="noreferrer"
-            className="flex shrink-0 items-center"
+            className="flex shrink items-center"
           >
             <img
               src={`${BASE_PATH}/media/model-os-logo.png`}
               alt="Model OS"
-              className="h-5 w-auto object-contain lg:h-[22px]"
+              className="h-4 w-auto object-contain lg:h-[22px]"
             />
           </a>
         </div>
 
         {/* Nav links + CTA — grouped on the right */}
-        <div className="ml-auto flex shrink-0 items-center gap-6 lg:gap-8">
+        <div className="ml-auto flex shrink-0 items-center gap-4 lg:gap-8">
           <div className="hidden items-center gap-8 lg:flex">
             {navLinks.map((link) => (
               <a
