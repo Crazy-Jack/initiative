@@ -55,18 +55,13 @@ const Navbar = () => {
 
           <div className="h-6 w-px bg-white/25 lg:h-7" />
 
-          <a
-            href="https://intelligencecubed.io/"
-            target="_blank"
-            rel="noreferrer"
-            className="relative flex h-8 w-auto items-center lg:h-9"
-          >
+          <div className="relative flex h-8 w-auto items-center lg:h-9">
             <img
-              src={`${BASE_PATH}/media/nav-logo-new.png`}
+              src={`${BASE_PATH}/media/i3_transparent.png`}
               alt="Intelligence Cubed"
               className="h-full w-auto object-contain brightness-0 invert"
             />
-          </a>
+          </div>
 
           <div className="h-6 w-px bg-white/25 lg:h-7" />
 
