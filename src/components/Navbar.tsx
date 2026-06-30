@@ -55,11 +55,11 @@ const Navbar = () => {
 
           <div className="h-6 w-px bg-white/25 lg:h-7" />
 
-          <div className="relative flex h-8 w-auto items-center lg:h-9">
+          <div className="relative flex h-5 w-auto items-center lg:h-6">
             <img
               src={`${BASE_PATH}/media/i3_transparent.png`}
               alt="Intelligence Cubed"
-              className="h-full w-auto object-contain brightness-0 invert"
+              className="h-full w-auto object-contain"
             />
           </div>
 
