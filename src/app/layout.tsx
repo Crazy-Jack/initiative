@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "i³ × CMU Modelverse Dev Initiative",
+  title: "i³ × CMU ModelOS Dev Initiative",
   description: "A collaborative research ecosystem pioneering decentralized intelligence and cost-effective AGI development.",
 };
 
