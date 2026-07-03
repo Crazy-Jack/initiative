@@ -179,12 +179,12 @@ const Team = () => {
   ];
 
   const fellows: Fellow[] = [
-    { name: 'Xuandong Zhao', institution: 'postdoc, UC Berkeley BAIR and RDI → now OpenAI', link: 'https://xuandongzhao.github.io/' },
+    { name: 'Xuandong Zhao', institution: 'postdoc, UC Berkeley BAIR and RDI, now OpenAI', link: 'https://xuandongzhao.github.io/' },
     { name: 'Yuejiang Liu', institution: 'postdoc, Stanford AI Lab', link: 'https://scholar.google.com/citations?user=Xi-B5WIAAAAJ&hl=en' },
     { name: 'Yaqi Xie', institution: 'postdoc, CMU Robotics Institute', link: 'https://scholar.google.com/citations?user=lBCCo0EAAAAJ&hl=en' },
     { name: 'Shiyi Du', institution: 'Ph.D., CMU Computational Biology', link: 'https://scholar.google.com/citations?user=rVKkjikAAAAJ&hl=en' },
     { name: 'Jiayuan Liu', institution: 'Ph.D., CMU Computer Science', link: 'https://liu-jiayuan.github.io/' },
-    { name: 'Shang Gao', institution: 'Ph.D., Caltech Computational Science → now Apple', link: 'https://scholar.google.com/citations?user=I3WuCWEAAAAJ' },
+    { name: 'Shang Gao', institution: 'Ph.D., Caltech Computational Science, now Apple', link: 'https://scholar.google.com/citations?user=I3WuCWEAAAAJ' },
     { name: 'Yitong Li', institution: 'Ph.D., Stanford HAI', link: 'https://hai.stanford.edu/people/yitong-li' },
     { name: 'Chengfeng Mao', institution: 'Ph.D., MIT', link: 'https://scholar.google.com/citations?user=NfilsZkAAAAJ&hl=en' },
     { name: 'Jason Dou', institution: 'postdoc, Harvard Medical School', link: 'https://sites.google.com/site/douxiaotianjason/' },
