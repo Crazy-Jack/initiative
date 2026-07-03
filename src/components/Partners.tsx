@@ -42,8 +42,6 @@ const Partners = () => {
     { name: 'AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
     { name: 'BNB Chain', logo: baseUrl + 'assets/images/logos/investor_logo/BNB%20Chain_id5Kz-gfh2_1.svg' },
     { name: 'Solana', logo: baseUrl + 'assets/images/logos/investor_logo/Solana_idN473ehUb_1.png' },
-    { name: 'Amber.ac', logo: baseUrl + 'assets/images/logos/investor_logo/amber_dsrv.png' },
-    { name: 'Cardano', logo: baseUrl + 'assets/images/logos/investor_logo/Cardano.png' },
   ];
 
   const trustedBy = [

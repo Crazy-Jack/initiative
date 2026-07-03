@@ -185,7 +185,7 @@ const Team = () => {
     { name: 'Shiyi Du', institution: 'Ph.D., CMU Computational Biology', link: 'https://scholar.google.com/citations?user=rVKkjikAAAAJ&hl=en' },
     { name: 'Jiayuan Liu', institution: 'Ph.D., CMU Computer Science', link: 'https://liu-jiayuan.github.io/' },
     { name: 'Shang Gao', institution: 'Ph.D., Caltech Computational Science', link: 'https://scholar.google.com/citations?user=I3WuCWEAAAAJ' },
-    { name: 'Yitong Li', institution: 'Ph.D., Stanford Computational Science', link: 'https://www.linkedin.com/in/yitong-li-2b3882299/' },
+    { name: 'Yitong Li', institution: 'Ph.D., Stanford HAI', link: 'https://hai.stanford.edu/people/yitong-li' },
     { name: 'Chengfeng Mao', institution: 'Ph.D., MIT', link: 'https://scholar.google.com/citations?user=NfilsZkAAAAJ&hl=en' },
     { name: 'Jason Dou', institution: 'postdoc, Harvard Medical School', link: 'https://sites.google.com/site/douxiaotianjason/' },
     { name: 'Peter Wang', institution: 'postdoc, Caltech', link: 'https://pwang.pw/' },
