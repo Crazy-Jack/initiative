@@ -29,7 +29,7 @@ const Hero = () => {
           className="max-w-2xl"
         >
           <p className="mb-4 text-xs font-medium tracking-[0.2em] uppercase text-white/50">
-            i³x Model OS x CMU
+            i³x CMU
           </p>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight mb-6">
