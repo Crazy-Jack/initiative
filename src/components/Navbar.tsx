@@ -63,20 +63,6 @@ const Navbar = () => {
             />
           </div>
 
-          <div className="h-5 w-px bg-white/25 lg:h-7" />
-
-          <a
-            href="https://modelos.technology/"
-            target="_blank"
-            rel="noreferrer"
-            className="flex shrink items-center"
-          >
-            <img
-              src={`${BASE_PATH}/media/model-os-logo.png`}
-              alt="Model OS"
-              className="h-4 w-auto object-contain lg:h-[22px]"
-            />
-          </a>
         </div>
 
         {/* Nav links + CTA — grouped on the right */}
