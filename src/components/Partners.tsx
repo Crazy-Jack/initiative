@@ -40,8 +40,6 @@ const Partners = () => {
     { name: 'Google Cloud', logo: baseUrl + 'assets/images/logos/investor_logo/Google_Cloud.png' },
     { name: 'Microsoft', logo: baseUrl + 'assets/images/logos/investor_logo/Microsoft_Logo_0.svg' },
     { name: 'AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
-    { name: 'BNB Chain', logo: baseUrl + 'assets/images/logos/investor_logo/BNB%20Chain_id5Kz-gfh2_1.svg' },
-    { name: 'Solana', logo: baseUrl + 'assets/images/logos/investor_logo/Solana_idN473ehUb_1.png' },
   ];
 
   const trustedBy = [
