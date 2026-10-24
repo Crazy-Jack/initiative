@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ScrollReveal, ScrollStagger, ScrollItem } from '@/components/ScrollReveal';
+import { BASE_PATH } from '@/lib/constants';
 
 const PartnerCard = ({ name, logo }: { name: string; logo?: string }) => (
   <div className="group flex h-20 items-center justify-center rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-[0_8px_32px_-24px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-[#C41230]/20 hover:shadow-[0_16px_40px_-24px_rgba(196,18,48,0.12)] md:h-[5.5rem] md:p-5">
@@ -40,6 +41,11 @@ const Partners = () => {
     { name: 'Google Cloud', logo: baseUrl + 'assets/images/logos/investor_logo/Google_Cloud.png' },
     { name: 'Microsoft', logo: baseUrl + 'assets/images/logos/investor_logo/Microsoft_Logo_0.svg' },
     { name: 'AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
+    { name: 'University of California, Berkeley', logo: `${BASE_PATH}/media/partners/berkeley.svg` },
+    { name: 'Stanford University', logo: `${BASE_PATH}/media/partners/stanford.png` },
+    { name: 'University of Chicago', logo: `${BASE_PATH}/media/partners/uchicago.png` },
+    { name: 'University of Michigan', logo: `${BASE_PATH}/media/partners/michigan.png` },
+    { name: 'Cornell University', logo: `${BASE_PATH}/media/partners/cornell.svg` },
   ];
 
   const trustedBy = [

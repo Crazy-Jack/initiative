@@ -1,0 +1,5 @@
+berkeley.svg: https://www.berkeley.edu/wp-content/themes/berkeleygateway/img/logo-berkeley.svg
+stanford.png: https://identity.stanford.edu/wp-content/uploads/sites/3/2020/06/wordmark-full-nospace-red.png
+uchicago.png: https://creative.uchicago.edu/files/2023/09/University-Logo_1Color_Maroon_RGB.png
+michigan.png: https://brand.umich.edu/assets/brand/style-guide/logo-guidelines/U-M_Logo-Hex.png
+cornell.svg: https://brand.cornell.edu/assets/images/downloads/logos/bold_cornell_logo/bold_cornell_logo.svg
